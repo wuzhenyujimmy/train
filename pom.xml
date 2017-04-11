@@ -14,13 +14,108 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring-webmvc</artifactId>
-    	<version>4.3.0.RELEASE</version>
+    
+
+<!-- spring mvc -->  
+    <dependency>  
+        <groupId>org.springframework</groupId>  
+        <artifactId>spring-webmvc</artifactId>  
+        <version>3.2.0.RELEASE</version>  
+    </dependency>  
+      
+    <!-- spring3 -->  
+    <dependency>  
+        <groupId>org.springframework</groupId>  
+        <artifactId>spring-core</artifactId>  
+        <version>3.2.0.RELEASE</version>  
+    </dependency>  
+    <dependency>  
+        <groupId>org.springframework</groupId>  
+        <artifactId>spring-context</artifactId>  
+        <version>3.2.0.RELEASE</version>  
+    </dependency>  
+    <dependency>  
+        <groupId>org.springframework</groupId>  
+        <artifactId>spring-jdbc</artifactId>  
+        <version>3.2.0.RELEASE</version>  
+    </dependency>       
+    <dependency>  
+        <groupId>org.springframework</groupId>  
+        <artifactId>spring-beans</artifactId>  
+        <version>3.2.0.RELEASE</version>  
+    </dependency>  
+    <dependency>  
+        <groupId>org.springframework</groupId>  
+        <artifactId>spring-web</artifactId>  
+        <version>3.2.0.RELEASE</version>  
+    </dependency>  
+    <dependency>  
+        <groupId>org.springframework</groupId>  
+        <artifactId>spring-expression</artifactId>  
+        <version>3.2.0.RELEASE</version>  
+    </dependency>  
+    <dependency>  
+        <groupId>org.springframework</groupId>  
+        <artifactId>spring-orm</artifactId>  
+        <version>3.2.0.RELEASE</version>  
+    </dependency>  
+    <dependency>  
+        <groupId>org.springframework</groupId>  
+        <artifactId>spring-test</artifactId>  
+        <version>3.2.0.RELEASE</version>  
     </dependency>
+
+    
+    <!-- aspectjweaver.jar这是Spring AOP所要用到的包 -->  
+    <dependency>  
+        <groupId>org.aspectj</groupId>  
+        <artifactId>aspectjweaver</artifactId>  
+        <version>1.7.1</version>  
+    </dependency>  
+
+	<!-- hibernate4 -->  
+    <dependency>  
+        <groupId>org.hibernate</groupId>  
+        <artifactId>hibernate-core</artifactId>  
+        <version>4.2.5.Final</version>  
+    </dependency>       
+    <dependency>  
+        <groupId>org.hibernate</groupId>  
+        <artifactId>hibernate-entitymanager</artifactId>  
+        <version>4.2.5.Final</version>  
+    </dependency>  
+    <dependency>  
+        <groupId>org.hibernate</groupId>  
+        <artifactId>hibernate-ehcache</artifactId>  
+        <version>4.2.5.Final</version>  
+    </dependency>  
+    <dependency>  
+        <groupId>org.hibernate.javax.persistence</groupId>  
+        <artifactId>hibernate-jpa-2.0-api</artifactId>  
+        <version>1.0.1.Final</version>  
+    </dependency>  
+    
+    <!-- mysql数据库的驱动包 -->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>5.1.6</version>
+    </dependency>
+    
   </dependencies>
   <build>
-    <finalName>train</finalName>
+	  <finalName>train</finalName>
+	  <plugins>
+	    <plugin>
+	      <artifactId>maven-war-plugin</artifactId>
+	    </plugin>
+	    <plugin>
+	      <artifactId>maven-compiler-plugin</artifactId>
+	      <configuration>
+	        <source>1.5</source>
+	        <target>1.5</target>
+	      </configuration>
+	    </plugin>
+	  </plugins>
   </build>
 </project>
